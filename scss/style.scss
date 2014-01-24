@@ -15,19 +15,32 @@ body {
 	font-family: $secondary-font;
 }
 
-h1 {
-
-}
-
 h2 {
 	font-family: $primary-font;
 	@include font-size(22);
 }
 
+a:link {
+	color: #333;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #333;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: none;
+}
+
 /* -- Banner Components -- */
 .banner {
 	height:300px;
-	background:#000;
+	background:#EEE;
 }
 
 /* -- Navigation components -- */

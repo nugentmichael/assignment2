@@ -1,14 +1,24 @@
+<!doctype html>
 <head>
+<meta name="viewport" content="width=device-width">
 <link type="text/css" href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <img src="images/logo.jpg" alt="Digg">
-        <ul id="navbar">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">VIDEO</a></li>
-            <li><a href="#">READER</a></li>
-        </ul>
+        <!--Navigation Menu-->
+          <div id="pattern" class="pattern">
+             <a href="#"><img src="images/logo.jpg" alt="Digg"></a>
+            <!--Begin Pattern HTML-->
+               <a href="#" class="menu-link"></a>
+                <nav id="menu" role="navigation">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">VIDEO</a></li>
+                        <li><a href="#">READER</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <!--End Navigation Menu-->
     </div>
     <div class="banner"></div>
     <div class="container">
@@ -58,5 +68,18 @@
         <!--// 3 Column Layout -->
         
     </div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var menulink = $('.menu-link');
+        var nav = $('#menu');
+      
+        menulink.click(function() {
+            nav.toggleClass('active');
+            return false;
+        });
+    });
+</script>
     
 </body>
