@@ -1,22 +1,28 @@
 /*
-Syntax error: Undefined mixin 'clearfix'.
-        on line 4 of scss/layout.scss, in `clearfix'
-        from line 4 of scss/layout.scss
+Syntax error: Undefined variable: "$largest-breakpoint".
+        on line 6 of scss/layout.scss
 
 1: /* -- Layout Components -- */
 2: 
-3: .col-container{
-4: 	@include clearfix;
-5: }
-6: .col{
-7: 	margin-top:1em;
-8: 	padding-top:1em;
-9: 	border-top:1px solid blue;
+3: .container {
+4: 	margin: 0 auto;
+5: 	
+6: 	@media (min-width: $largest-breakpoint) {
+7: 		width:40em;
+8: 	}
+9: 	
+10: 	@media (min-width: 65em) {
+11: 		width: 65em;
 
 Backtrace:
-scss/layout.scss:4:in `clearfix'
-scss/layout.scss:4
-/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+scss/layout.scss:6
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/script/variable.rb:49:in `_perform'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/script/node.rb:40:in `perform'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:398:in `block in run_interp_no_strip'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:396:in `map'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:396:in `run_interp_no_strip'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:406:in `run_interp'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:360:in `visit_media'
 /Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -51,11 +57,12 @@ scss/layout.scss:4
 /Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
 /Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
 /Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
-/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
-/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:198:in `call'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'clearfix'.\A         on line 4 of scss/layout.scss, in `clearfix'\A         from line 4 of scss/layout.scss\A \A 1: /* -- Layout Components -- */\A 2: \A 3: .col-container{\A 4: 	@include clearfix;\A 5: }\A 6: .col{\A 7: 	margin-top:1em;\A 8: 	padding-top:1em;\A 9: 	border-top:1px solid blue;"; }
+  content: "Syntax error: Undefined variable: \"$largest-breakpoint\".\A         on line 6 of scss/layout.scss\A \A 1: /* -- Layout Components -- */\A 2: \A 3: .container {\A 4: 	margin: 0 auto;\A 5: 	\A 6: 	@media (min-width: $largest-breakpoint) {\A 7: 		width:40em;\A 8: 	}\A 9: 	\A 10: 	@media (min-width: 65em) {\A 11: 		width: 65em;"; }

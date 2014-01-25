@@ -8,62 +8,42 @@
 		ul { @include clearfix; }
 		li { float:left; margin-left:1em; margin-top:0; }
 		li:first-child{ margin-left:0; }
-		a{ padding:0.5em 1em; text-align:left; }	
+		a{ padding:0.5em 1em; text-align:left; }
 	}
 }
 
-.container {
-	margin: 0 auto;
-	
-	@media (min-width: $largest-breakpoint) {
-		width:40em;
-	}
-	
-	@media (min-width: 55em) {
-		width: 55em;
-	}
+#search {
+	float: right;
+	margin-top: 20px;
+	width: 60px;
+	height: 20px;
+	display: block;
+	background: transparent url('../images/search.png') center top no-repeat;
+}
 
-	img {
-		margin: 2.5%;
-		width: 100px;
-		height: auto;
-	}
-
-	ul {
-		padding: 0;
-		margin:0;
-	}
-	
-	a {
-		display: block;
-		padding: 1em;
-		text-align:center;
-
-		img {
-			padding: 0;
-		}
-	}
-	
-	@media (min-width:40em) {
-		ul { @include clearfix; list-style-type: none; }
-		li { float:left; margin: 0.3em 1em }
-		li:first-child{ margin-left:0; }
-		a{ padding:0.5em 1em; text-align:left; float: left; }
-		a.menu-link { margin-top: -90px; }
-	}
+#search:hover {
+	cursor: pointer;
+	background-image: url('../images/search-hover.png');
 }
 
 .pattern {
-	border-bottom: 1px solid #808080;
+	box-shadow: 0px 2px 5px #DDD;
+	-webkit-box-shadow: 0px 2px 5px #DDD;
+	-moz-box-shadow: 0px 2px 5px #DDD;
 	margin-bottom: 1em;
 	overflow: hidden;
+
+	@media (max-width: 40em) {
+		#search { display: none; }
+	}
 }
 
 section { padding:1em; }
 
 a.menu-link {
-	float:right;
-	margin-top: -87px;
+	position: absolute;
+	top: 0;
+	right: 10px;
 	display:block;
 	padding:1em;
 
@@ -102,7 +82,6 @@ nav[role=navigation] {
 nav[role=navigation] ul {
 	margin: 0;
 	padding: 0;
-	border-top: 1px solid #808080;
 }
 
 nav[role=navigation] li a {
