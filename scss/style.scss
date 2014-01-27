@@ -28,6 +28,18 @@ h2 {
 	@include font-size(22);
 }
 
+h3 {
+	font-family: $primary-font;
+	@include font-size(14);
+}
+
+h6 {
+	font-family: $primary-font;
+	font-weight: normal;
+	@include font-size(9);
+	margin-top: -30px;
+}
+
 a:link {
 	color: #333;
 	text-decoration: none;

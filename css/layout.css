@@ -5,7 +5,7 @@ Syntax error: Undefined variable: "$largest-breakpoint".
 1: /* -- Layout Components -- */
 2: 
 3: .container {
-4: 	margin: 0 auto;
+4: 	margin: 10px auto;
 5: 	
 6: 	@media (min-width: $largest-breakpoint) {
 7: 		width:40em;
@@ -57,12 +57,11 @@ scss/layout.scss:6
 /Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
 /Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
 /Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:198:in `call'
-/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
-/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
-/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$largest-breakpoint\".\A         on line 6 of scss/layout.scss\A \A 1: /* -- Layout Components -- */\A 2: \A 3: .container {\A 4: 	margin: 0 auto;\A 5: 	\A 6: 	@media (min-width: $largest-breakpoint) {\A 7: 		width:40em;\A 8: 	}\A 9: 	\A 10: 	@media (min-width: 65em) {\A 11: 		width: 65em;"; }
+  content: "Syntax error: Undefined variable: \"$largest-breakpoint\".\A         on line 6 of scss/layout.scss\A \A 1: /* -- Layout Components -- */\A 2: \A 3: .container {\A 4: 	margin: 10px auto;\A 5: 	\A 6: 	@media (min-width: $largest-breakpoint) {\A 7: 		width:40em;\A 8: 	}\A 9: 	\A 10: 	@media (min-width: 65em) {\A 11: 		width: 65em;"; }
