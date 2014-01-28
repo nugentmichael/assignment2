@@ -27,6 +27,11 @@
 }
 
 .pattern {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #FFF;
 	box-shadow: 0px 2px 5px #DDD;
 	-webkit-box-shadow: 0px 2px 5px #DDD;
 	-moz-box-shadow: 0px 2px 5px #DDD;

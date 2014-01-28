@@ -4,11 +4,16 @@
 	margin: 10px auto;
 	
 	@media (min-width: $largest-breakpoint) {
+		&:first-child { margin-top: 75px; }
 		width:40em;
 	}
 	
 	@media (min-width: 65em) {
 		width: 65em;
+	}
+
+	@media (max-width: 60em) {
+		&:first-child { margin-top: 110px; }
 	}
 
 	#logo {
@@ -44,8 +49,9 @@
 /* -- Banner Components -- */
 .banner {
 	min-height: 360px;
-	margin: auto;
+	margin: 6% auto 0;
 	padding: 0 2% 1%;
+	border-bottom: 1px solid #EBEBEB;
 	
 	@media (min-width: $largest-breakpoint) {
 		width:40em;
@@ -84,7 +90,32 @@
 	}
 }
 
-.col-1{ background:purple; width:100%; }
+.col-1 {
+	background-image: url('../images/marquee_standard_blurred.jpeg');
+	background-size: cover;
+	width: 100%;
+	padding: 10px;
+
+	@media (min-width: $largest-breakpoint){
+		.col-3 {
+			width: 18%;
+		}
+	}
+
+	a:visited {
+		color: #EEE;
+	}
+
+	a:hover {
+		color: #0093cc;
+	}
+
+	#quote {
+		color: #CCC !important;
+	}
+
+	h3 { margin-top: -15px; }
+}
 
 .col-2{
 	background:orange;
