@@ -12,11 +12,11 @@ $primary-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $secondary-font: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
 
 * {
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
 }
 
 body { 
@@ -31,6 +31,12 @@ h2 {
 h3 {
 	font-family: $primary-font;
 	@include font-size(14);
+}
+
+h4 {
+	font-family: $primary-font;
+	text-transform: uppercase;
+	font-weight: lighter;
 }
 
 h6 {

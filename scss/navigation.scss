@@ -27,6 +27,7 @@
 }
 
 .pattern {
+	z-index: 1000;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -47,16 +48,15 @@ section { padding:1em; }
 
 a.menu-link {
 	position: absolute;
-	top: 0;
-	right: 10px;
+	top: 5px;
+	left: 10px;
 	display:block;
 	padding:1em;
 
 	&:before {
 	content:'\2630';
 	color: #000;
-	font-size: 36px;
-	font-weight: bold;
+	font-size: 30px;
 	}
 
 	&:hover {
