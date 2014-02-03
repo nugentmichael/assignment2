@@ -1,4 +1,4 @@
-MTM4086 - Week02 - Sass template
+MTM4086 - Assignment #02
 ============================
 http://nugentmichael.github.io/assignment2
 
