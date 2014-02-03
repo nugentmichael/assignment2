@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$largest-breakpoint".
-        on line 6 of scss/layout.scss
+        on line 7 of scss/layout.scss
 
-1: /* -- Layout Components -- */
 2: 
-3: .container {
-4: 	margin: 10px auto;
-5: 	
-6: 	@media (min-width: $largest-breakpoint) {
-7: 		&:first-child { margin-top: 75px; }
-8: 		width:40em;
-9: 	}
-10: 	
-11: 	@media (min-width: 65em) {
+3: /* -- Main Container Divs -- */
+4: .container {
+5: 	margin: 10px auto;
+6: 	
+7: 	@media (min-width: $largest-breakpoint) {
+8: 		&:first-child { margin-top: 75px; }
+9: 		width:40em;
+10: 	}
+11: 	
+12: 	@media (min-width: 65em) {
 
 Backtrace:
-scss/layout.scss:6
+scss/layout.scss:7
 /Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/script/variable.rb:49:in `_perform'
 /Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/script/node.rb:40:in `perform'
 /Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:398:in `block in run_interp_no_strip'
@@ -64,4 +64,4 @@ scss/layout.scss:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$largest-breakpoint\".\A         on line 6 of scss/layout.scss\A \A 1: /* -- Layout Components -- */\A 2: \A 3: .container {\A 4: 	margin: 10px auto;\A 5: 	\A 6: 	@media (min-width: $largest-breakpoint) {\A 7: 		&:first-child { margin-top: 75px; }\A 8: 		width:40em;\A 9: 	}\A 10: 	\A 11: 	@media (min-width: 65em) {"; }
+  content: "Syntax error: Undefined variable: \"$largest-breakpoint\".\A         on line 7 of scss/layout.scss\A \A 2: \A 3: /* -- Main Container Divs -- */\A 4: .container {\A 5: 	margin: 10px auto;\A 6: 	\A 7: 	@media (min-width: $largest-breakpoint) {\A 8: 		&:first-child { margin-top: 75px; }\A 9: 		width:40em;\A 10: 	}\A 11: 	\A 12: 	@media (min-width: 65em) {"; }
